@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+header, nav, main, aside, footer{
+    background: rgb(0, 0, 0);
+    display: flex;
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px #f8f8f833;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+nav .btn-nav{
+    margin: 3%;
+    font-size: 15pt;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: 
+    linear-gradient(to right, #ffffff,#ffffff),
+    linear-gradient(to right, rgba(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+    
+}
+nav .btn-nav:hover{
+    text-underline-offset: .3rem;
+    background-size: 0 0.1em, 100% 0.1em;
+}
+main{
+    height: 630px;
+}
+aside{
+    height: 100px;
+
+}
+footer{
+    height: 100px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 9vh;
+}
+.lista{
+    list-style: none;
+    display: flex;
+}
+.lista li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+}
+nav h1{
+    color: black;
+    font-size: 119%;
+    font-family: 'Poppins', sans-serif;
+}
+.containermain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+h1{
+    line-height: 110%;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+}
+.web{
+    color: #f54a6f;
+    text-shadow: 0px 0px 10px #f54a6f;
+}
+.dev{
+    color: white;
+}
+.cabecalho{
+    margin-top: 50px;
+    margin-left: 200px;
+}
+p{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 20px;
+}
+.fotoperfil{
+    position: relative;
+    display: flex;
+    width: 324px;
+    height: 351px;
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 200px;
+    border-radius: 10px;
+}
+footer{
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+.fotoperfil{
+    margin-bottom: 31px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+.btn-contato button{
+    color: black;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s
+}
+.btn-contato button:hover{
+    color: white;
+    background-color: #f54a6f;
+    box-shadow: 0px 0px 8px #f54a6f;
+    transform: scale(1.05);
+}
+.btn-contato{
+    margin-top: 37px;
+}
+aside{
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+}
+.containeraside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn-falecomigo{
+    text-decoration: none;
+}
+.btn-falecomigo button{  
+    color: white;
+    margin-left: 10;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #f54a6f;
+    border-radius: 25px;
+    display: flex;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.btn-falecomigo button:hover{
+    color: white;
+    background-color: #f54a6f;
+    box-shadow: 0px 0px 8px #f54a6f;
+    transform: scale(1.05);
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 25px;
+    }
+}
